@@ -3,7 +3,7 @@ const CONFIG = {
   name: 'Brew & Bean',
   tagline: 'Fresh coffee, good vibes',
   currency: '₹',
-  sheetCsvUrl: '',          // Google Sheet "Publish to web" CSV link. Empty = use menu.csv
+  sheetCsvUrl: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRC1CDOI_vowDf8haB4zFydwLjudU0T8vKTEZcYk6Nl_Rd-Pu1PSls3atixQ1x0IRVEDRI6MOJwu_L8/pub?gid=982696723&single=true&output=csv',          // Google Sheet "Publish to web" CSV link. Empty = use menu.csv
   logo: 'logo.png',         // café logo file in the same folder (optional)
   brandColor: '#8b4a2b',    // main colour: name, chips, prices
   accentColor: '#c9962b'    // line under the header and tagline
