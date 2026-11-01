@@ -1,0 +1,27 @@
+:root{--bg:#faf7f2;--card:#fff;--ink:#2a211b;--mute:#7a6f66;--brand:#8b4a2b;--gold:#c9962b;--line:#eadfd3}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:var(--logo,none) center/70% no-repeat;opacity:.06}
+header{position:sticky;top:0;background:var(--bg);padding:14px 16px 8px;z-index:5;border-bottom:3px solid var(--gold)}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+#logo{width:52px;height:52px;object-fit:contain;border-radius:50%}
+h1{margin:0;font-size:24px;color:var(--brand)}
+#tagline{margin:2px 0 0;color:var(--gold);font-size:13px;font-weight:600}
+#search{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);font-size:15px}
+#chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none}
+.chip{flex:none;padding:6px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:14px;cursor:pointer}
+.chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
+main{max-width:640px;margin:0 auto;padding:8px 16px 32px}
+.cat{margin:20px 0 8px;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--brand)}
+.item{display:flex;align-items:center;gap:12px;background:rgba(255,255,255,.92);border:1px solid var(--line);border-radius:14px;padding:12px;margin-bottom:10px}
+.item img{width:64px;height:64px;object-fit:cover;border-radius:10px}
+.info{flex:1;min-width:0}
+.name{display:flex;align-items:center;gap:8px;font-weight:600}
+.desc{margin:4px 0 0;font-size:13px;color:var(--mute)}
+.price{font-weight:700;color:var(--brand);white-space:nowrap}
+.dot{width:12px;height:12px;border:1.5px solid;border-radius:3px;position:relative;flex:none}
+.dot::after{content:"";position:absolute;inset:2px;border-radius:50%;background:currentColor}
+.veg{color:#2e9e4f}.nonveg{color:#c0392b}
+.out{opacity:.5}.out .price{color:var(--mute);font-weight:500;font-size:13px}
+.empty{text-align:center;color:var(--mute);padding:32px 0}
